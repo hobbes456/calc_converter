@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <script src="./main.js" defer></script>
+    <title>Конвертер</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <a href="../calc/index.html">Калькулятор</a>
+        </nav>
+        <div class="converter" id="converter">
+            <div class="block">
+                <div class="currency__panel__1">
+                    <div class="currency valid">RUB</div>
+                    <div class="currency">USD</div>
+                    <div class="currency">EUR</div>
+                    <div class="currency">GBP</div>
+                </div>
+                <input id="input__box1" type="text" value="1000">
+                <div class="info">0 RUB = 0 USD</div>
+            </div>
+            <div id="button__reverse"><img src='./image1.png'></div>
+            <div class="block">
+                <div class="currency__panel__2">
+                    <div class="currency">RUB</div>
+                    <div class="currency valid">USD</div>
+                    <div class="currency">EUR</div>
+                    <div class="currency">GBP</div>
+                </div>
+                <input id="input__box2" type="text" disabled>
+                <div class="info">0 RUB = 0 USD</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

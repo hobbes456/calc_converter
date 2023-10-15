@@ -1,0 +1,137 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+input {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: rgba(90, 90, 90, 0.95);
+  font-size: 35px;
+  overflow: auto;
+  padding: 20px;
+  text-align: left;
+  height: 60px;
+  width: 360px;
+}
+
+input:focus {
+  outline: none;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+}
+
+img:hover {
+  cursor: pointer;
+  border: 5px rgba(0, 0, 0, 0) solid;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e2970b;
+}
+
+body {
+  background: linear-gradient(150deg, #00ff95, rgba(78, 172, 149, 0.6666666667), #e2970b);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-display: swap;
+  height: inherit;
+}
+body .container {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+body .container .navigation {
+  align-self: flex-end;
+  height: 50px;
+  margin: 50px 50px;
+  padding: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+}
+body .container .converter {
+  height: inherit;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+body .container .converter .block {
+  height: 250px;
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  font-size: 18px;
+}
+body .container .converter .block .currency__panel__1, body .container .converter .block .currency__panel__2 {
+  height: 50px;
+  width: 360px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 2px;
+  flex-direction: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+body .container .converter .block .currency__panel__1 .currency, body .container .converter .block .currency__panel__2 .currency {
+  height: inherit;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px #e2970b solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body .container .converter .block .currency__panel__1 .valid, body .container .converter .block .currency__panel__2 .valid {
+  color: #e2970b;
+  border: 2px #e2970b solid;
+}
+body .container .converter .block .currency__panel__1 .currency:hover, body .container .converter .block .currency__panel__2 .currency:hover {
+  color: #e2970b;
+  border: 2px #e2970b solid;
+}
